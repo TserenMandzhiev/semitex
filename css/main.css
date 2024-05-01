@@ -219,6 +219,7 @@ legend {
 .header .header__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
 }
 .header .header__content .header__content-text {
   max-width: 847px;
@@ -287,17 +288,6 @@ legend {
   margin-top: 30px;
 }
 
-.header__modal {
-  visibility: hidden;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 .header__form {
   max-width: 380px;
   justify-self: flex-end;
@@ -349,31 +339,50 @@ legend {
 }
 .header__form .input__name::-webkit-input-placeholder, .header__form .input__phone::-webkit-input-placeholder {
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 16px;
 }
 .header__form .input__name::-moz-placeholder, .header__form .input__phone::-moz-placeholder {
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 16px;
 }
 .header__form .input__name:-ms-input-placeholder, .header__form .input__phone:-ms-input-placeholder {
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 16px;
 }
 .header__form .input__name::-ms-input-placeholder, .header__form .input__phone::-ms-input-placeholder {
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 16px;
 }
 .header__form .input__name::placeholder,
 .header__form .input__phone::placeholder {
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .form__hidden {
   display: none;
 }
 
+.header__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 1500px) {
+  .header__form {
+    margin: 100px auto;
+  }
+  .form__hidden {
+    display: grid;
+    align-self: flex-end;
+    justify-self: flex-start;
+    row-gap: 250px;
+  }
   .header {
     padding-top: 10px;
     -webkit-box-pack: start;
@@ -522,10 +531,8 @@ legend {
     z-index: 1;
     margin: 100px auto;
   }
-  .open {
-    visibility: visible;
-  }
   .header .header__content {
+    margin: 0 auto;
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
@@ -548,7 +555,7 @@ legend {
   }
   .header .header__content {
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 500px;
   }
   .header .header__content .content__title {
     font-size: 40px;
@@ -560,9 +567,24 @@ legend {
     font-size: 36px;
   }
   .header .header__content .content__text {
+    max-width: 400px;
     white-space: wrap;
   }
   .container {
     padding: 0 20px;
   }
+}
+.main__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 85px;
+  min-height: 1200px;
 }/*# sourceMappingURL=main.css.map */

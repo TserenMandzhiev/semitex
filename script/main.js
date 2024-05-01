@@ -16,7 +16,6 @@ const modal = document.querySelector('.modalActive');
 
 formBtn.addEventListener('click', function() {
 	modal.classList.toggle('open');
-	
 });
 
 
