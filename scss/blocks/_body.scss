@@ -2,6 +2,65 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 85px;
+	padding-top: 85px;
+	padding-bottom: 130px;
 	min-height: 1200px;
+	gap: 42px;
+}
+
+.about__text {
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	color: $color-black-dark;
+	text-align: center;
+}
+
+.about__title {
+	font-size: 45px;
+	font-weight: 700;
+	font-family: FuturaDemiC;
+}
+
+.about__text {
+	max-width: 1051px;
+	font-weight: 400;
+	font-size: 22px;
+	font-family: FuturaBookC;
+}
+
+.main__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 43px;
+	row-gap: 32px;
+}
+
+.main__card {
+	max-width: 369px;
+	min-height: 406px;
+	padding: 40px 32px 61px 32px;
+	text-align: center;
+	background: $color-white;
+	background-image: url('/images/cardBg.png');
+	border-radius: 10px;
+	transition: $animation-text;
+	&:hover {
+		-webkit-box-shadow: 14px 10px 13px 0px rgba(0,0,0,0.37);
+		-moz-box-shadow: 14px 10px 13px 0px rgba(0,0,0,0.37);
+		box-shadow: 14px 10px 13px 0px rgba(0,0,0,0.37);
+	}
+}
+
+.card__title {
+	font-family: FuturaDemiC;
+	font-size: 20px;
+	color: $color-dark-blue;
+	margin-top: 39.29px;
+}
+
+.card__text {
+	font-family: FuturaBookC;
+	margin-top: 14px;
 }

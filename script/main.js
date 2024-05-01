@@ -11,11 +11,10 @@ burger.addEventListener('click', function() {
 })
 
 const formBtn = document.querySelector('.modalWindow');
-
-const modal = document.querySelector('.modalActive');
+const form = document.querySelector('.header__modal');
+const open = document.getElementsByClassName('.open')
 
 formBtn.addEventListener('click', function() {
-	modal.classList.toggle('open');
+	form.classList.toggle('open');
 });
-
 
