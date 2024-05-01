@@ -1,0 +1,39 @@
+.container {
+	margin: 0 auto;
+	max-width: 1920px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.form {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.yellow-btn {
+	background: $color-yellow;
+	border-radius: 10px;
+	font-family: FuturaBookC;
+	color: $color-white;
+	font-size: 18px;
+	padding: 19px 68px;
+	&:hover,
+	&:active {
+		transition: $animation-text;
+		background: $color-purple-txt;
+	}
+}
+
+.form__hidden {
+	background: $color-purple-txt;
+	padding: 19px 68px;
+	border-radius: 10px;
+	font-family: FuturaBookC;
+	font-size: 18px;
+	color: $color-white;
+	&:hover,
+	&:active {
+		transition: $animation-text;
+		background: $color-yellow;
+	}
+}
