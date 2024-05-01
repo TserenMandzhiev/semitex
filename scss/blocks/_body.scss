@@ -46,10 +46,27 @@
 	background-image: url('/images/cardBg.png');
 	border-radius: 10px;
 	transition: $animation-text;
+	position: relative;
 	&:hover {
 		-webkit-box-shadow: 14px 10px 13px 0px rgba(0,0,0,0.37);
 		-moz-box-shadow: 14px 10px 13px 0px rgba(0,0,0,0.37);
 		box-shadow: 14px 10px 13px 0px rgba(0,0,0,0.37);
+	}
+	&::after {
+		position: absolute;
+		z-index: -1;
+		bottom: -10px;
+		right: -10px;
+		content: 'Возьмите на работу';
+		display: block;
+		opacity: 0;
+		transition: opacity $animation-text, transform $animation-text;
+		font-family: FuturaBookC;
+		transform: translate(-10px, -10px);
+	}
+	&:hover::after {
+		opacity: 1;
+		transform: translate(10px, 10px);
 	}
 }
 
