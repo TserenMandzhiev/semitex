@@ -32,7 +32,6 @@
 .main__cards {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
 	column-gap: 43px;
 	row-gap: 32px;
 }
@@ -80,4 +79,106 @@
 .card__text {
 	font-family: FuturaBookC;
 	margin-top: 14px;
+}
+
+
+
+
+.manufacturer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 50px;
+	min-height: 728px;
+	background: url('/images/ico/mask.svg'), url('/images/ico/swipperBl.png') , no-repeat, no-repeat;
+}
+
+.swiper {
+	display: flex;
+	max-width: 1420px;
+	width: 100%;
+	height: 174px;
+	margin: 0;
+}
+
+.swiper-wrapper {
+	display: flex;
+	gap: 18px;
+	align-items: center;
+	box-sizing: content-box;
+}
+
+.swiper-slide {
+	max-width: 242px;
+	background: $color-white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	background: $color-purple-txt;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 20px;
+	color: $color-white;
+}
+
+.manufacturer__title {
+	font-family: FuturaDemiC;
+	font-size: 45px;
+	text-align: center;
+	color: $color-white;
+}
+
+.manufacturer__text {
+	font-family: FuturaBookC;
+	font-size: 20px;
+	color: $color-white;
+}
+
+@media (max-width: 1350px) {
+	.main__cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 800px) {
+	.main__cards {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 600px) {
+	.about__title {
+		font-size: 40px;
+	}
+	.about__text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 460px) {
+	.about__title {
+		font-size: 30px;
+	}
+	.about__text {
+		font-size: 14px;
+	}
+
+	.main__card {
+		.card__title {
+			font-size: 18px;
+		}
+		.card__text {
+			font-size: 14px;
+		}
+	}
 }

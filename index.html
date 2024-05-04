@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Semitex</title>
 </head>
@@ -22,6 +23,11 @@
 			</div>
 			<nav class="header__menu-nav">
 				<ul class="menu__list">
+					<li class="close__icon">
+						<button class="menu__close-btn">
+							<img src="/images/ico/close.svg" alt="">
+						</button>
+					</li>
 					<li class="menu__item">
 						<a href="#">Каталог</a>
 					</li>
@@ -71,10 +77,11 @@
 				</nav>
 			</div>
 			<div class="header__modal">
-				<form class="header__form modalActive">
+				<button class="form__hidden modalWindow">Закажите обратный звонок</button>
+				<form class="header__form">
 					<div class="form__title">
-						<h2>Закажите обратный звонок</h2>
-					</div>
+					<h2>Закажите обратный звонок</h2>
+						</div>
 					<label class="form__name form" for="name">Ваше имя*</label>
 					<input class="input__name form" type="text" placeholder="Петров Петр" id="name">
 					<label class="form__phone form" for="phone">Ваш номер*</label>
@@ -83,11 +90,9 @@
 					<p class="form__footer form"><img src="/images/ico/lock.svg" alt="">гарантируем конфиденциальность данных</p>
 				</form>
 			</div>
-			
-			<button class="form__hidden modalWindow">Закажите обратный звонок</button>
 		</div>
 	</header>
-	<main class="main container">
+	<main class="main">
 		<section class="main__about">
 			<div class="about__text">
 				<h1 class="about__title">Почему с нами выгодно</h1>
@@ -102,32 +107,72 @@
 				</div>
 				<div class="main__card">
 					<img src="/images/card2.svg" alt="">
-					<p class="card__title">Качественная продукция</p>
-					<p class="card__text">Все наши товары сертифицированы и имеют сопроводительную документацию.</p>
+					<p class="card__title">Индивидуальный подход</p>
+					<p class="card__text">Возможность изготовления компонентов специально для вас
+					на заводах-изготовителя.</p>
 				</div>
 					<div class="main__card">
 					<img src="/images/card3.svg" alt="">
-					<p class="card__title">Качественная продукция</p>
-					<p class="card__text">Все наши товары сертифицированы и имеют сопроводительную документацию.</p>
+					<p class="card__title">Бесплатная доставка</p>
+					<p class="card__text">При наличии товара на складе и заказе от 10 000 рублей,
+					доставим бесплатно по Москве и СПБ в течение 2х часов.</p>
 				</div>
 					<div class="main__card">
 					<img src="/images/card4.svg" alt="">
-					<p class="card__title">Качественная продукция</p>
-					<p class="card__text">Все наши товары сертифицированы и имеют сопроводительную документацию.</p>
+					<p class="card__title">Подбираем аналоги</p>
+					<p class="card__text">Поможем подобрать аналоги популярных европейских брендов
+					в условиях санкций.</p>
 				</div>
 					<div class="main__card">
 					<img src="/images/card5.svg" alt="">
-					<p class="card__title">Качественная продукция</p>
-					<p class="card__text">Все наши товары сертифицированы и имеют сопроводительную документацию.</p>
+					<p class="card__title">Резервный запас компонентов</p>
+					<p class="card__text">Хранение товара на наших складах для постоянных клиентов.</p>
 				</div>
 					<div class="main__card">
 					<img src="/images/card6.svg" alt="">
-					<p class="card__title">Качественная продукция</p>
-					<p class="card__text">Все наши товары сертифицированы и имеют сопроводительную документацию.</p>
+					<p class="card__title">Гибкая система оплаты</p>
+					<p class="card__text">Отсрочка платежей для постоянных клиентов.</p>
 				</div>
 			</div>
 		</section>
+		<section class="manufacturer container">
+			<div class="manufacturer__title">
+				<h1>Наши производители</h1>
+			</div>
+			<div class="swiper">
+  <!-- Additional required wrapper -->
+  			<div class="swiper-wrapper">
+    			<!-- Slides -->
+    			<div class="swiper-slide">
+						<img src="/images/slider/slide1.png" alt="">
+					</div>
+    			<div class="swiper-slide">
+						<img src="/images/slider/slide2.png" alt="">
+					</div>
+    			<div class="swiper-slide">
+						<img src="/images/slider/slide3.png" alt="">
+					</div>
+    			<div class="swiper-slide">
+						<img src="/images/slider/slide4.png" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="/images/slider/slide5.png" alt="">
+					</div>
+  			</div>
+
+  			<!-- If we need navigation buttons -->
+  			<div class="swiper-button-prev"></div>
+  			<div class="swiper-button-next"></div>
+				
+			</div>
+			<div class="manufacturer__text">
+				<p>Lorem ipsum dolor sit amet consectetur. Non eget blandit in euismod felis id quisque nunc. Non orci lacus elit mauris velit gravida imperdiet id. Ipsum pulvinar ac ut sociis. Sed magna gravida consequat et euismod aenean quis mauris. Ut etiam egestas ultrices faucibus ultrices nisl enim consequat faucibus. Nibh id leo ullamcorper eleifend. Id at commodo interdum et leo. </p>
+			</div>
+		</section>
 	</main>
+	<script src="/script/swiper-bundle.min.js"></script>
+	<script src="/script/swip.js"></script>
 	<script src="/script/main.js"></script>
+	<script src="/script/navbar.js"></script>
 </body>
 </html>
