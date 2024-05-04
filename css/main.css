@@ -889,9 +889,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 135px;
-  background: url("/images/cards-bg.png");
-  background-position: 100% 100%;
-  background-size: 200%;
+  padding-bottom: 134px;
+  background: url("/images/cards-bg.png") no-repeat bottom;
 }
 
 .job__card {
@@ -975,6 +974,65 @@ body {
 }
 
 .qua {
-  padding-top: 0;
-  background: url("/images/quaBl.png"), no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  gap: 53px;
+  background: url("/images/quaBg.png") no-repeat bottom right, url("/images/quaBl.png") no-repeat;
+  z-index: 0;
+  padding-bottom: 95px;
+}
+
+.qua-title {
+  padding-top: 131px;
+  color: #FFFFFF;
+}
+
+.qua__drop-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 13px;
+}
+
+.qua__text-content {
+  font-family: FuturaDemiC;
+  color: #FFFFFF;
+  font-size: 24px;
+  background: #969AF7;
+  max-width: 1280px;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 29px;
+  padding-left: 53px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.qua-text {
+  font-family: FuturaBookC;
+  font-size: 20px;
+  -webkit-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
+          transform: translateY(-40px);
+  z-index: -1;
+  background: #FFFFFF;
+  padding: 80px 40px 40px 40px;
+  border-radius: 10px;
+  line-height: 27px;
+  width: 100%;
+}
+
+.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

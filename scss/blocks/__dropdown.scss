@@ -1,4 +1,53 @@
 .qua {
-	padding-top: 0;
-	background:url('/images/quaBl.png'), no-repeat;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	gap: 53px;
+	background: url('/images/quaBg.png') no-repeat bottom right, url('/images/quaBl.png') no-repeat;
+	z-index: 0;
+	padding-bottom: 95px;
+}
+
+.qua-title {
+	padding-top: 131px;
+	color: $color-white;
+}
+
+.qua__drop-down {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.qua__text-content {
+	font-family: FuturaDemiC;
+	color: $color-white;
+	font-size: 24px;
+	background: $color-purple-txt;
+	max-width: 1280px;
+	width: 100%;
+	padding-top: 35px;
+	padding-bottom: 29px;
+	padding-left: 53px;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+
+.qua-text {
+	font-family: FuturaBookC;
+	font-size: 20px;
+	transform: translateY(-40px);
+	z-index: -1;
+	background: $color-white;
+	padding: 80px 40px 40px 40px;
+	border-radius: 10px;
+	line-height: 27px;
+	width: 100%;
+	// display: none;
+}
+
+.active {
+	display: block;
 }
