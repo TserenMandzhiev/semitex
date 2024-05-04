@@ -3,11 +3,8 @@ const swiper = new Swiper('.swiper', {
 	direction: 'horizontal',
 	loop: true,
 	speed: 500,
-	effect: 'slider',
-	slidesPerView: 5,
-	centeredSlides: true,
+	slidesPerView: 4.5,
 	freeMode: true,
-
 
 
 	// Navigation arrows
@@ -19,4 +16,5 @@ const swiper = new Swiper('.swiper', {
 	autoplay: {
 		delay: 5000,
 	},
-});
+
+})

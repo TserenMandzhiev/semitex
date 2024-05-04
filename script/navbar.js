@@ -8,4 +8,11 @@ window.addEventListener('scroll', ()=> {
 	} else {
 		navBar.classList.remove('navbar__bg');
 	}
+
+	if (scrollPosition > 300 && formModal.classList.contains('header__form')) {
+		formModal.style.display = 'none';
+	} else {
+		formModal.style.display = 'flex';
+	}
 });
+

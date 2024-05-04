@@ -30,9 +30,9 @@
 	padding-bottom: 40px;
 	position: fixed;
 	gap: 15px;
-	z-index: 2;
+	z-index: 100;
 	transition: box-shadow $animation-text, padding-top $animation-text, padding-bottom $animation-text;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(5px);
 	& .menu__list {
 		display: flex;
 		align-items: center;
@@ -230,6 +230,7 @@
 		padding-top: 20px;
 		transform: translateY(-100%);
 		transition: transform $animation-text;
+		border-radius: 0 0 10px 10px;
 
 
 		& .menu__list {
@@ -326,7 +327,6 @@
 	.header__menu {
 		gap: 150px;
 	}
-
 
 	.header__form {
 		position: absolute;
