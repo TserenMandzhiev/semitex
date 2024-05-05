@@ -1,15 +1,14 @@
 .qua {
+	background: url('/images/quaBg.png') no-repeat, url('/images/quaBl.png') no-repeat;
+	background-size: cover;
+	padding-top: 131px;
+	padding-bottom: 95px;
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
-	gap: 53px;
-	background: url('/images/quaBg.png') no-repeat bottom right, url('/images/quaBl.png') no-repeat;
-	z-index: 0;
-	padding-bottom: 95px;
+	row-gap: 53px;
 }
 
 .qua-title {
-	padding-top: 131px;
 	color: $color-white;
 }
 
@@ -19,35 +18,74 @@
 	gap: 13px;
 }
 
-.qua__text-content {
-	font-family: FuturaDemiC;
-	color: $color-white;
-	font-size: 24px;
+.qua__items-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 38px 24px 53px;
 	background: $color-purple-txt;
-	max-width: 1280px;
-	width: 100%;
-	padding-top: 35px;
-	padding-bottom: 29px;
-	padding-left: 53px;
 	border-radius: 10px;
-	position: relative;
-	z-index: 1;
 }
 
+.qua__items-text {
+	color: $color-white;
+	font-family: FuturaDemiC;
+	font-size: 24px;
+}
 
-.qua-text {
+.qua__btn {
+	padding-top: 10px;
+	border-radius: 50%;
+	background: $color-white;
+	width: 40px;
+	height: 40px;
+}
+
+.qua__items-subtitle {
 	font-family: FuturaBookC;
 	font-size: 20px;
-	transform: translateY(-40px);
-	z-index: -1;
+	color: $color-gray-dark;
 	background: $color-white;
-	padding: 80px 40px 40px 40px;
-	border-radius: 10px;
-	line-height: 27px;
-	width: 100%;
-	// display: none;
+	padding-top: 0;
+	padding-right: 43px;
+	padding-left: 35px;
+	padding-bottom: 0;
+	transform: translateY(-5px);
+	text-wrap: wrap;
+	overflow-y: hidden;
+	height: 0;
+	transition: padding-top $animation-text, padding-bottom $animation-text, height $animation-text;
 }
 
-.active {
-	display: block;
+.active-text {
+	padding-top: 39px;
+	padding-bottom: 53px;
+	height: 100%;
+}
+
+
+@media (max-width: $tablet-mid) {
+	.qua__items-text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: $mobile) {
+	.qua__btn {
+		width: 50px;
+    height: 30px;
+	}
+	.qua__items-text {
+		font-size: 16px;
+	}
+	.qua__items-subtitle {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: $mobile-s) {
+	.qua__btn {
+		width: 55px;
+		height: 25px;
+	}
 }

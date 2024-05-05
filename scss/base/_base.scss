@@ -14,7 +14,7 @@ body {
 	padding-right: 40px;
 }
 
-.yellow-btn {
+@mixin yellow-btn {
 	background: $color-yellow;
 	border-radius: 10px;
 	font-family: FuturaBookC;
@@ -28,7 +28,7 @@ body {
 	}
 }
 
-.form__hidden {
+@mixin form-hidden {
 	background: $color-purple-txt;
 	padding: 19px 68px;
 	border-radius: 10px;
@@ -41,6 +41,7 @@ body {
 		background: $color-yellow;
 	}
 }
+
 
 .navbar__bg {
 	background: rgba(150, 154, 247, .7);

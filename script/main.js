@@ -22,11 +22,20 @@ const formButton = document.querySelector('.form__hidden');
 
 
 
-formButton.addEventListener('click', ()=> {
+formButton.addEventListener('click', (event)=> {
 	formModal.classList.toggle('modal__header');
 	
 	if (formModal.classList.contains('modal__header')) {
 		navList.classList.remove('menu__list-open');
 	}
+
 });
+
+formModal.addEventListener('click', (event)=> {
+	if (event.target === formModal) {
+		formModal.style.visibility = 'hidden';
+	} else {
+		formModal.style.visibility = 'visible';
+	}
+})
 
